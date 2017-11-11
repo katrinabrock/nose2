@@ -15,7 +15,7 @@ install:
 - travis_retry pip install coveralls
 - travis_retry pip install coverage
 script:
-  tox
+  make test
 after_success:
 - coveralls
 deploy:
